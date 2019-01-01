@@ -2,22 +2,52 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
   	  <meta charset="utf-8"/>
-      <title>Home</title>
+      <title>HTML Practice - basics</title>
+      
+      <style>
+    	.teams {
+        	background-color: black; 
+            color: white; 
+            padding: 10px; 
+            font-family: arial; 
+        }
+        
+        .teamname {
+        	font-size: 120%; 
+        }
+    </style>
+    
+    <script>
+		function displayResult() {
+  			document.getElementById("subheader").innerHTML = "Have a nice day!";
+		}
+	</script>
   </head>
   <body>
-      <h1 id="mainheader">Hello World - test</h1>
-      <img src="images/MVIMG_20181216_124411.jpg" width="300" alt="Joe at GSSA Sacramento"></img> <br>
-      <q>My friend from Marsh Creek Elementary</q>
+      <h1 id="mainheader" style="font-size:60px;">HTML Practice - basics</h1>
+      <h2 id="subheader" title="Section Title">Hello World</h2>
+      <img src="images/MVIMG_20181216_124411.jpg" width="300" alt="Joe at GSSA Sacramento"></img> <br />
+      <q style="color:red">My friend from Marsh Creek Elementary</q>
       <blockquote>Call it like you mean it - Joe before they start on stage</blockquote>
       <hr>
-      <ul> Joe's favorites
+      <ul title="List of Joe's favorite teammates"> Joe's favorites
       	<li>Olivia</li>
-      	<li>Martin</li>
-      	<li>Natalie</li>
+      	<li><mark>Martin</mark></li>
+      	<li><strong>Natalie</strong></li>
       	<li>Sam</li>
       	<li>Carly</li>
+        <li><del>Talia</del></li>
       	<li>Coach Mike</li>
       	<li>Coach Neda</li>
+        <li><ins>...and Alec</ins></li>
       </ul>
+      <button onclick="displayResult()">Click me</button>
+      <hr>
+      <div class="teams">
+      	<p><span class="teamname">Junior Ops</span> <br>
+        Junior Ops is a co-ed junior level 5 team at the California All-Stars Bay Area. This is the first season for Junior Ops, which makes this the third team where Joe has been an original member. </p>
+      </div>
+      <iframe src="http://www.californiaallstars.com/" name="locations" style="border: solid blue;width: 450px;"></iframe>
+      <p><a href="http://www.californiaallstars.com/bayarea/" target="locations">Bay Area</p>
   </body>
 </html>
