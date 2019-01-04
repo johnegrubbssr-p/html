@@ -67,122 +67,152 @@
       	<h1 id="mainheader" title="Page Title">HTML Practice - basics</h1>
       </header>
       
-      <section>
-      	<img src="images/joe.jpg" alt="Joe" style="float:left;width:100px;margin:10px;" />
-        <h2 id="subheader" title="Section Title">Joe Grubbs</h2>
-        <p>
-        	<a href="https://www.instagram.com/bullet_boy_/">
-        		<img src="images/instagram2.jpg" style="width:32px;vertical-align:middle;" />
-        	</a> : Bullet_boy_
-        </p>
-      	<button onclick="alert('Thanks for visiting my page!');">Click me</button> <button onclick="displayResult()">Click me Too</button>
-        <hr />
-     	<img src="images/MVIMG_20181216_124411.jpg" alt="Joe at GSSA Sacramento" style="max-width:100%;height:auto;" /> <br />
-      	<q>My friend from Marsh Creek Elementary</q>
-      	<blockquote>Call it like you mean it - Joe before they start on stage</blockquote>
-      
-      	<hr />
-      	<ul title="List of Joe's favorite teammates"> Joe's favorites
-      		<li>Olivia</li>
-      		<li><mark>Martin</mark></li>
-      		<li><strong>Natalie</strong></li>
-      		<li>Sam</li>
-      		<li>Carly</li>
-        	<li><del>Talia</del></li>
-      		<li>Coach Mike</li>
-      		<li>Coach Neda</li>
-        	<li><ins>...and Alec</ins></li>
-      	</ul>
-      
-      	<hr />
-      	<table>
-      		<tr>
-      			<th>Team (Gym)</th>
-      			<th>Division</th>
-      			<th>Season</th>
-      			<th>Cheer Age</th>
-      		</tr>
-      		<tr>
-      			<td>&diams; (Blackdiamond)</td>
-      			<td>Tiny 1</td>
-      			<td>2012-13</td>
-      			<td>4</td>
-      		</tr>
-      		<tr>
-       			<td><a href="#bbgunz">BB Gunz</a> (Cali)</td>
-      			<td>Mini 1</td>
-      			<td>2014-15</td>
-      			<td>6</td>
-      		</tr>
-      		<tr>
-      			<td><a href="#younggunz">Young Gunz</a> (Cali)</td>
-      			<td>Youth 3</td>
-      			<td>2015-16</td>
-      			<td>7</td>
-      		</tr>
- 	     	<tr>
-      			<td><a href="#younggunz">Young Gunz</a> (Cali)</td>
-      			<td>Youth 3</td>
-      			<td>2016-17</td>
-      			<td>8</td>
-      		</tr>
-      		<tr>
-      			<td><a href="#covert">Covert</a> (Cali)</td>
-      			<td>Co-ed Junior 4</td>
-      			<td>2017-18</td>
-      			<td>9</td>
-      		</tr>
-      		<tr>
-      			<td><a href="#jops">Junior Ops</a> (Cali)</td>
-      			<td>Co-ed Junior 5</td>
-      			<td>2018-19</td>
-      			<td>10</td>
-      		</tr>
-      	</table>
-        <hr />
-      	<div class="teams">
-      		<p id="bbgunz"><span class="teamname">BB Gunz (BBz)</span> <br />
-        	BB Gunz is a mini level 1 team at the California All-Stars Bay Area. 
-        	Joe was an original member of BB Gunz during the 2014-15 season. This team competed in the Prep division and won the Prep Grand Champion at the USA Finals.
-        	Young Gunz is not currently an active team at Cali.</p>
-	  	</div>
-	  	<div class="teams">
-      		<p id="younggunz"><span class="teamname">Young Gunz (Gunz)</span> <br />
-        	Young Gunz is a co-ed youth level 3 team at the California All-Stars Bay Area. 
-        	Joe was an original member of Young Gunz during the 2015-16 season. 
-        	Young Gunz is not currently an active team at Cali.</p>
-	  	</div>
-      	<div class="teams">
-      		<p id="covert"><span class="teamname">Covert</span> <br />
-        	Covert is a co-ed junior level 4 team at the California All-Stars Bay Area. 
-        	Joe's sister Annabelle was an original member of Covert during her second season at Cali. 
-        	Joe was on the first Covert team to compete at The Summit during the 2017-18 season. </p>
-      	</div>
-      	<div class="teams">
-      		<p id="jops"><span class="teamname">Junior Ops (JOps)</span> <br />
-        	Junior Ops is a co-ed junior level 5 team at the California All-Stars Bay Area. 
-        	This is the first season for Junior Ops, which makes this the third team where Joe has been an original member. </p>
-      	</div>
-      	<br />
-      	<iframe src="index.html" name="location_i" style="border: solid blue;width: 100%;height: 300px;"></iframe>
-      	<p>
-        <a href="https://blackdiamondkidscenter.com/programs/cheer-home-page/all-star-cheer/" target="location_i">Black Diamond All Stars</a> | <a href="https://www.californiaallstars.com/bayarea/" target="location_i">Cali Bay Area</a></p>
+      </main>
+      	<section>
+      		<img src="images/joe.jpg" alt="Joe" style="float:left;width:100px;margin:10px;" />
+        	<h2 id="subheader" title="Intro to Joe">Joe Grubbs</h2>
+        	<p>
+        		<a href="https://www.instagram.com/bullet_boy_/">
+        			<img src="images/instagram2.jpg" style="width:32px;vertical-align:middle;" />
+        		</a> : Bullet_boy_
+        	</p>
+      		<button onclick="alert('Thanks for visiting my page!');">Click me</button> | <button onclick="displayResult()">Click me Too</button>
+        	<hr />
+        	<figure>
+        		<img src="images/MVIMG_20181216_124411.jpg" alt="Joe at GSSA Sacramento" style="max-width:100%;height:auto;" />
+        		<figcaption>My friend from Marsh Creek Elementary</figcaption>
+        	</figure>
+        	<hr />
+        </section>
         
-        <form oninput="x.value=parseInt(a.value)* parseInt(b.value)">
-  			<input type="hidden"  id="a" name="a" value="9">
-  			9 *
-  			<input type="text" id="b" name="b" size="5" maxlength="2" value="1">
-  			=
-  			<output name="x" for="a b"></output>
-  			<br>
-		</form>
-		<br />
-		<form>
-			<input type="email" name="email" title="Email Address" placeholder="Email Address" required pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b" />
-    		<input type="submit" value="Submit" />
-		</form>
-		<hr />
-      </section>
+      	<section>
+      		<h3 title="Quotes from and about Joe">Quotes</h3>
+      		<q>Call it like you mean it</q> - Joe
+      		<blockquote>Call it like you mean it - Joe before they start on stage</blockquote>
+      		<hr />
+      	
+      		<ul title="List of Joe's favorite teammates"> Joe's favorites
+      			<li>Olivia</li>
+      			<li><mark>Martin</mark></li>
+      			<li><strong>Natalie</strong></li>
+      			<li>Sam</li>
+      			<li>Carly</li>
+        		<li><del>Talia</del></li>
+      			<li>Coach Mike</li>
+      			<li>Coach Neda</li>
+        		<li><ins>...and Alec</ins></li>
+      		</ul> 
+      		<hr />
+      	</section>
+      		
+      	<section>
+      		<h3 title="Teams Joe has performed with">Team History</h3>
+      		<table>
+      			<tr>
+      				<th>Team (Gym)</th>
+      				<th>Division</th>
+      				<th>Season</th>
+      				<th>Cheer Age</th>
+      			</tr>
+      			<tr>
+      				<td>&diams; (Blackdiamond)</td>
+      				<td>Tiny 1</td>
+      				<td>2012-13</td>
+      				<td>4</td>
+      			</tr>
+      			<tr>
+       				<td><a href="#bbgunz">BB Gunz</a> (Cali)</td>
+      				<td>Mini 1</td>
+      				<td>2014-15</td>
+      				<td>6</td>
+      			</tr>
+      			<tr>
+      				<td><a href="#younggunz">Young Gunz</a> (Cali)</td>
+      				<td>Youth 3</td>
+      				<td>2015-16</td>
+      				<td>7</td>
+      			</tr>
+ 	     		<tr>
+      				<td><a href="#younggunz">Young Gunz</a> (Cali)</td>
+      				<td>Youth 3</td>
+      				<td>2016-17</td>
+      				<td>8</td>
+      			</tr>
+      			<tr>
+      				<td><a href="#covert">Covert</a> (Cali)</td>
+      				<td>Co-ed Junior 4</td>
+      				<td>2017-18</td>
+      				<td>9</td>
+      			</tr>
+      			<tr>
+      				<td><a href="#jops">Junior Ops</a> (Cali)</td>
+      				<td>Co-ed Junior 5</td>
+      				<td>2018-19</td>
+      				<td>10</td>
+      			</tr>
+      		</table>
+        	<hr />
+        </section>
+        	
+      	<section>
+      		<h3 title="Descriptions of each team">Teams</h3>
+      		<div class="teams">
+      			<p id="bbgunz"><span class="teamname">BB Gunz (BBz)</span> <br />
+        			BB Gunz is a mini level 1 team at the California All-Stars Bay Area. 
+        			Joe was an original member of BB Gunz during the 2014-15 season. This team competed in the Prep division and won the Prep Grand Champion at the USA Finals.
+        			BB Gunz is not currently an active team at Cali.
+        			</p>
+	  		</div>
+	  		<div class="teams">
+      			<p id="younggunz"><span class="teamname">Young Gunz (Gunz)</span> <br />
+        			Young Gunz is a co-ed youth level 3 team at the California All-Stars Bay Area. 
+        			Joe was an original member of Young Gunz during the 2015-16 season. 
+        			Young Gunz is not currently an active team at Cali.
+        		</p>
+	  		</div>
+      		<div class="teams">
+      			<p id="covert"><span class="teamname">Covert</span> <br />
+        			Covert is a co-ed junior level 4 team at the California All-Stars Bay Area. 
+        			Joe's sister Annabelle was an original member of Covert during her second season at Cali. 
+        			Joe was on the first Covert team to compete at The Summit during the 2017-18 season. 
+        		</p>
+      		</div>
+      		<div class="teams">
+      			<p id="jops"><span class="teamname">Junior Ops (JOps)</span> <br />
+        			Junior Ops is a co-ed junior level 5 team at the California All-Stars Bay Area. 
+        			This is the first season for Junior Ops, which makes this the third team where Joe has been an original member. 
+        		</p>
+      		</div>
+      		<br />
+      	</section>
+      	
+      	<section>
+      		<h3 title="Practicing iFrames">iFrame practice</h3>
+      		<iframe src="index.html" name="location_i" style="border: solid blue;width: 100%;height: 300px;"></iframe>
+      		<p>
+        		<a href="https://blackdiamondkidscenter.com/programs/cheer-home-page/all-star-cheer/" target="location_i">Black Diamond All Stars</a> | 
+        		<a href="https://www.californiaallstars.com/bayarea/" target="location_i">Cali Bay Area</a>
+        	</p>
+        </section>
+        
+        <section>
+        	<h3 title="Form practice">Form practice</h3>
+        	<form oninput="x.value=parseInt(a.value)* parseInt(b.value)">
+  				<input type="hidden"  id="a" name="a" value="9">
+  				9 *
+  				<input type="text" id="b" name="b" size="5" maxlength="2" value="1">
+  				=
+  				<output name="x" for="a b"></output>
+  				<br />
+			</form>
+			<br />
+			<form>
+				<input type="email" name="email" title="Email Address" placeholder="Email Address" required pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b" />
+    			<input type="submit" value="Submit" />
+			</form>
+			<hr />
+      	</section>
+      </main>
       
       <footer>
       	<details>
