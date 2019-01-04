@@ -7,7 +7,7 @@
   	  <meta name="author" content="JG" />
   	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
-      <base href="https://storage.googleapis.com/nexttenliterate.com/joe/" />
+      <!-- <base href="https://storage.googleapis.com/nexttenliterate.com/joe/" /> -->
   	  
       <title>HTML Practice - basics</title>
       
@@ -16,6 +16,10 @@
       		font-size: 60px; 
       		font-family: arial; 
       	}
+      	
+      	hr {
+        	clear: left;
+        }
       	
       	q {
       		color: red;
@@ -51,7 +55,7 @@
     
     <script>
 		function displayResult() {
-  			document.getElementById("subheader").innerHTML = "Have a nice day!";
+  			document.getElementById("mainheader").innerHTML = "Have a nice day!";
   			document.getElementById("pgfooter").innerHTML = Date();
   			document.getElementById("pgfooter").style.color = "blue";
   			document.getElementById("pgfooter").style.backgroundColor = "yellow";
@@ -64,7 +68,13 @@
       </header>
       
       <section>
-      	<h2 id="subheader" title="Section Title">Hello World</h2>
+      	<img src="images/joe.jpg" alt="Joe" style="float:left;width:100px;margin:10px;" />
+        <h2 id="subheader" title="Section Title">Joe Grubbs</h2>
+        <p>
+        	<a href="https://www.instagram.com/bullet_boy_/">
+        		<img src="images/instagram2.jpg" style="width:32px;vertical-align:middle;" />
+        	</a> : Bullet_boy_
+        </p>
       	<button onclick="alert('Thanks for visiting my page!');">Click me</button> <button onclick="displayResult()">Click me Too</button>
         <hr />
      	<img src="images/MVIMG_20181216_124411.jpg" alt="Joe at GSSA Sacramento" style="max-width:100%;height:auto;" /> <br />
@@ -161,7 +171,7 @@
         <form oninput="x.value=parseInt(a.value)* parseInt(b.value)">
   			<input type="hidden"  id="a" name="a" value="9">
   			9 *
-  			<input type="text" id="b" name="b" size="3" maxlength="2" value="0">
+  			<input type="text" id="b" name="b" size="5" maxlength="2" value="1">
   			=
   			<output name="x" for="a b"></output>
   			<br>
@@ -169,11 +179,17 @@
 		<br />
 		<form>
 			<input type="email" name="email" title="Email Address" placeholder="Email Address" required pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b" />
-    		<input type="sub /mit" value="Submit" />
+    		<input type="submit" value="Submit" />
 		</form>
+		<hr />
       </section>
       
       <footer>
+      	<details>
+  			<summary>&copy; Copyright 2018-2019.</summary>
+  			<p> - by John Grubbs. All Rights Reserved.<br />
+  			All content and graphics on this web site are the property of John Grubbs.</p>
+		</details>
       	<p id="pgfooter"></p>
       </footer>
       
